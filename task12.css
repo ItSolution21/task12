@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 20px;
+    padding: 12px;
+    border: 2px solid black;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    /* background-color: blue; */
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease-out; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-iteration-count: 3; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-fill-mode: backwards; */
+    animation-fill-mode: both;
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    /* background-color: blue; */
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    /* animation-timing-function: ease;     */
+
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    /* background-color: blue; */
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    animation-name: slide2;
+    animation-duration: 10s;
+}
+
+.box5{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    animation-name: anime;
+    animation-duration: 6s;
+}
+
+.box6{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    animation: bounceInLeft;
+    animation-duration: 3s;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0px);
+        background-color: white;
+    }
+    to{
+        transform: translateX(1300px);
+        background-color: lightcoral;
+        border-radius: 50%;
+        box-shadow: -12px 0px 3px 2px black;
+    }
+}
+
+
+@keyframes slide2 {
+    from{
+        transform: translateY(0px);
+        background-color: white;
+    }
+    to{
+        transform: translateY(500px);
+        background-color: lightcoral;
+        border-radius: 50%;
+        box-shadow: 0px -23px 3px 2px black;
+    }
+}
+
+
+
+
+@keyframes anime{
+    0%{
+        /* transform: rotate(0deg); */
+        transform: translateX(0);
+        background-color: white;
+    }
+    25%{
+        transform: translateX(500px);
+        background-color: lightblue;
+    }
+    50%{
+        transform: translateX(500px);
+        transform: translateY(0);
+        transform: rotate(0deg);
+        background-color: lightcoral;
+    }
+    75%{
+        transform: rotate(360deg);
+        background-color: lightgreen;
+    }
+    100%{
+        background-color: lightsalmon;
+    }
+}
